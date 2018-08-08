@@ -10,6 +10,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar-wagon">
+      <div class="navbar-wagon-left">
+        <span class=".navbar-wagon-item"> <%= link_to "All restaurants", root_path %> </span>
+      </div>
+      <div class="navbar-wagon-right">
+        
+        <span class=".navbar-wagon-item"> <%= link_to "Add a restaurant", new_restaurant_path %> </span>
+      </div>
+    </div>
+
+    <div class="container text-center resize">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
